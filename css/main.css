@@ -109,6 +109,14 @@ span {
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-list__link:hover, .nav-list__link:focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
 
 .nav-list__link.current {
   color: var(--accent-color);
@@ -123,16 +131,6 @@ span {
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
-}
-
-.nav-list__link:hover,
-.nav-list__link:focus {
-  color: var(--accent-color);
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
 }
 
 .contacts .contacts__item + .contacts__item {
@@ -150,9 +148,7 @@ span {
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -160,18 +156,19 @@ span {
   margin-right: 10px;
   fill: currentColor;
 }
+.contacts__icon-mail:hover, .contacts__icon-mail:focus {
+  fill: var(--accent-color);
+}
 
 .contacts__icon-smartphone {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.contacts__icon-mail:hover,
-.contacts__icon-smartphone:hover {
+.contacts__icon-smartphone:hover, .contacts__icon-smartphone:focus {
   fill: var(--accent-color);
 }
 
-/* селектор героя */
+/* секція героя */
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -219,9 +216,7 @@ span {
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   border: 1px solid transparent;
   color: var(--primary-white-color);
   background-color: #188ce8;
@@ -377,15 +372,13 @@ span {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-list__link:hover, .social-list__link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
 
 .social-list__icon {
   fill: currentColor;
-}
-
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }
 
 /* секція клієнти */
@@ -413,15 +406,13 @@ span {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients-list__link:hover, .clients-list__link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 .clients-list__icon {
   fill: currentColor;
-}
-
-.clients-list__link:hover,
-.clients-list__link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 /* футер */
@@ -462,9 +453,7 @@ span {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
@@ -513,14 +502,12 @@ span {
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-social__link:hover, .footer-social__link:focus {
+  background-color: var(--accent-color);
+}
 
 .footer-social__icon {
   fill: currentColor;
-}
-
-.footer-social__link:hover,
-.footer-social__link:focus {
-  background-color: var(--accent-color);
 }
 
 /* форма у футері */
@@ -551,25 +538,21 @@ span {
   background-color: transparent;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-box__input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-box__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-box__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-box__input:focus {
   outline-color: var(--accent-color);
 }
@@ -590,9 +573,7 @@ span {
   border-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-form__btn:hover,
-.footer-form__btn:focus {
+.footer-form__btn:hover, .footer-form__btn:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -655,9 +636,7 @@ span {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__close-button:hover,
-.modal__close-button:focus {
+.modal__close-button:hover, .modal__close-button:focus {
   fill: var(--accent-color);
 }
 
@@ -688,6 +667,9 @@ b {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form__field:focus-within .form__icon {
+  fill: var(--accent-color);
+}
 
 .form__label {
   position: absolute;
@@ -705,69 +687,63 @@ b {
   padding-left: 42px;
   width: 100%;
   height: 40px;
+  border-color: rgba(33, 33, 33, 0.2);
   outline-color: rgba(33, 33, 33, 0.2);
-  border-width: 1px;
   border-radius: 6px;
   cursor: pointer;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__field:focus-within .form__icon {
-  fill: var(--accent-color);
-}
-
 .form__input:focus {
   outline-color: var(--accent-color);
 }
 
-textarea {
+.form__comment {
   margin-bottom: 20px;
   padding: 12px 16px;
   width: 100%;
   min-height: 120px;
   outline-color: rgba(33, 33, 33, 0.2);
+  border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
 }
-
 .form__comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form__comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form__comment::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form__comment:focus {
   outline-color: var(--accent-color);
 }
 
 .form__policy {
+  position: relative;
+  display: block;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
 }
 
 .form__icon-check {
+  position: absolute;
+  top: 17%;
+  left: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -787,12 +763,11 @@ textarea {
 }
 
 .form__link {
+  padding-left: 7px;
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__link:hover,
-.form__link:focus {
+.form__link:hover, .form__link:focus {
   color: #188ce8;
 }
 
@@ -816,9 +791,7 @@ textarea {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0px 4px 4px rgba(0, 0, 0, 0.15) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-box__button:hover,
-.form-box__button:focus {
+.form-box__button:hover, .form-box__button:focus {
   color: var(--primary-white-color);
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -849,9 +822,7 @@ textarea {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.buttons-list__btn:hover,
-.buttons-list__btn:focus {
+.buttons-list__btn:hover, .buttons-list__btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -874,19 +845,12 @@ textarea {
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio__item:hover,
-.portfolio__item:focus {
+.portfolio__item:hover, .portfolio__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__link {
   text-decoration: none;
-}
-
-.portfolio__link:hover .portfolio__box-descr,
-.portfolio__link:focus .portfolio__box-descr {
-  transform: translateY(-100%);
 }
 
 .portfolio__box {
@@ -897,13 +861,15 @@ textarea {
 .portfolio__box-descr {
   position: absolute;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   width: 100%;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__link:hover .portfolio__box-descr, .portfolio__link:focus .portfolio__box-descr {
+  transform: translateY(-100%);
 }
 
 .portfolio__description {
